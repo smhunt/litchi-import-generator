@@ -5,7 +5,6 @@ A Flask API for generating Litchi-compatible mission CSV files
 from flask import Flask, request, jsonify, make_response
 from flask_cors import CORS
 from litchi_csv_generator import generate_litchi_csv, validate_waypoint
-import io
 
 app = Flask(__name__)
 CORS(app)
